@@ -51,12 +51,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Create release artifacts
-        shell: bash
-        run: |
-          npm install
-          npx sematic-release
-      - uses: akhileshns/heroku-deploy@v3.12.12
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "sshelf-api"
