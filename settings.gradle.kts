@@ -13,7 +13,7 @@ gradleEnterprise {
 rootProject.name = "ss-api"
 enableFeaturePreview("VERSION_CATALOGS")
 
-val gitHook = File(".git/hooks/pre-receive")
+val gitHook = File(".git${File.separator}hooks${File.separator}commit-msg")
 if (!gitHook.exists()) {
     val file = """
         #!/usr/bin/env sh
