@@ -39,6 +39,6 @@ if (!gitHook.exists()) {
         exit 1
         
     """.trimIndent()
-    gitHook.writeText(file, Charsets.UTF_8)
-    gitHook.setExecutable(true)
+//    gitHook.writeText(file, Charsets.UTF_8)
+//    gitHook.setExecutable(true)
 }
