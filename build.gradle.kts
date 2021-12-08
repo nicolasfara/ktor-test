@@ -25,6 +25,17 @@ dependencies {
     testImplementation(libs.ktorTest)
 }
 
+val stage by tasks.registering {
+    dependsOn("shadowJar")
+    doLast {
+        val procfile = File("Procfile")
+        val payload = """
+            web: java -jar build/libs/ss-api-${version}-all.jar
+        """.trimIndent()
+        procfile.writeText(payload, Charsets.UTF_8)
+    }
+}
+
 tasks {
     shadowJar {
         manifest {
