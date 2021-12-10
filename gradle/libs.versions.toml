@@ -7,7 +7,7 @@ logbackVersion = "1.2.7"
 ktor-server = { module = "io.ktor:ktor-server-core", version.ref = "ktorVersion" }
 ktor-auth = { module = "io.ktor:ktor-auth", version.ref = "ktorVersion" }
 ktor-jwt = { module = "io.ktor:ktor-auth-jwt", version.ref = "ktorVersion" }
-ktor-serialization = { module = "io.ktor:ktor-serialization", version.ref = "ktorVersion" }
+ktor-serialization = { module = "io.ktor:ktor-jackson", version.ref = "ktorVersion" }
 ktor-websocket = { module = "io.ktor:ktor-websockets", version.ref = "ktorVersion" }
 ktor-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktorVersion" }
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logbackVersion" }
