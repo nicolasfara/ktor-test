@@ -21,4 +21,4 @@ ktor = ["ktor-server", "ktor-auth", "ktor-jwt", "ktor-serialization", "ktor-webs
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinVersion" }
-shadow = { id = "com.github.johnrengelman.shadow", version = "7.1.0" }
+shadow = { id = "com.github.johnrengelman.shadow", version = "7.1.1" }
