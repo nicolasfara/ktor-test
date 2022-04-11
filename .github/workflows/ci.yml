@@ -33,7 +33,7 @@ jobs:
       - name: Validate wrapper
         uses: gradle/wrapper-validation-action@v1.0.4
       - name: Cache Gradle packages
-        uses: actions/cache@v3.0.1
+        uses: actions/cache@v3.0.2
         with:
           path: |
             ~/.gradle/caches
